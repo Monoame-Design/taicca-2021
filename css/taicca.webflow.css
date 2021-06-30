@@ -44,10 +44,13 @@ a {
 
 .width1170 {
   position: relative;
+  overflow: visible;
   max-width: 1170px;
   margin-right: auto;
   margin-bottom: 100px;
   margin-left: auto;
+  -o-object-fit: fill;
+  object-fit: fill;
 }
 
 .width1170.highlight-lineup {
@@ -84,6 +87,7 @@ a {
 
 .container.online-catalog {
   height: 600px;
+  margin-top: 220px;
   padding-top: 0px;
   padding-bottom: 0px;
   -webkit-box-align: center;
@@ -631,8 +635,9 @@ a {
   grid-template-rows: auto auto;
 }
 
-.linup-list-item {
+.lineup-list-item {
   position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -654,12 +659,12 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-transition: z-Index 200ms ease;
-  transition: z-Index 200ms ease;
+  -webkit-transition: z-Index 600ms ease;
+  transition: z-Index 600ms ease;
 }
 
-.linup-list-item:hover {
-  z-index: 1;
+.lineup-list-item:hover {
+  z-index: 1000;
 }
 
 .lineup-item-info {
@@ -748,6 +753,12 @@ a {
   object-fit: cover;
 }
 
+.image-gray.cliped.too-red {
+  opacity: 0.9;
+  -webkit-filter: brightness(110%) contrast(110%) grayscale(100%);
+  filter: brightness(110%) contrast(110%) grayscale(100%);
+}
+
 .image-gray.hovering {
   display: none;
   background-color: #ea573e;
@@ -766,6 +777,9 @@ a {
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .exhibitors-list-group.justify-right {
@@ -807,11 +821,11 @@ a {
 
 .exhibitors-info {
   position: absolute;
-  left: -100%;
+  left: -150%;
   top: 100%;
   right: 0%;
   bottom: auto;
-  width: 300%;
+  width: 400%;
   padding-top: 2px;
   text-align: center;
 }
@@ -900,9 +914,10 @@ a {
 
 .background.hand {
   left: auto;
-  top: auto;
+  top: 600px;
   right: 0%;
-  bottom: -150px;
+  bottom: auto;
+  overflow: visible;
   width: 30%;
   -webkit-transition: bottom 600ms cubic-bezier(.68, -.55, .265, 1.55);
   transition: bottom 600ms cubic-bezier(.68, -.55, .265, 1.55);
@@ -913,10 +928,11 @@ a {
 }
 
 .background.line-group {
-  left: auto;
-  top: auto;
-  right: -300px;
-  bottom: -500px;
+  left: 433px;
+  top: 728px;
+  right: 433px;
+  bottom: 728px;
+  overflow: visible;
   width: 90%;
   height: 500px;
 }
@@ -1029,7 +1045,7 @@ a {
 }
 
 .bold {
-  width: 100%;
+  width: 240px;
   font-weight: 700;
 }
 
@@ -1039,7 +1055,7 @@ a {
       "Area-2 Area-2";
   }
 
-  .linup-list-item {
+  .lineup-list-item {
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
