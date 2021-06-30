@@ -100,6 +100,7 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
   height: 100vh;
   margin-top: -60px;
   padding: 0px 0%;
@@ -925,6 +926,7 @@ a {
   top: auto;
   right: auto;
   bottom: auto;
+  display: none;
   width: 20%;
   height: 20%;
   background-image: url('../images/Ellipse-110.svg');
