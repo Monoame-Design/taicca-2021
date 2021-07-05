@@ -1278,7 +1278,7 @@ a {
   top: 100%;
   right: 0%;
   bottom: auto;
-  max-width: 70%;
+  max-width: 80%;
   padding: 0.5em;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
@@ -1287,20 +1287,24 @@ a {
   background-color: #e9e0da;
   color: #ea573e;
   text-align: center;
+  white-space: break-spaces;
 }
 
 .links-btn-hover-info.alignleft {
   left: -10%;
-  text-align: center;
+  max-width: 60%;
+  text-align: justify;
 }
 
 .links-btn-hover-info.alignright {
   max-width: 60%;
-  text-align: right;
+  text-align: justify;
 }
 
 .links-btn-hover-info.filming {
+  max-width: 70%;
   margin-left: 10%;
+  text-align: justify;
 }
 
 .center {
@@ -1680,13 +1684,19 @@ a {
     object-fit: cover;
   }
 
+  .links-btn-hover-info {
+    max-width: 50%;
+  }
+
   .links-btn-hover-info.alignleft {
     left: 0%;
-    max-width: 100%;
+    max-width: 90%;
+    text-align: justify;
   }
 
   .links-btn-hover-info.alignright {
-    max-width: 80%;
+    max-width: 70%;
+    text-align: justify;
   }
 }
 
@@ -1961,6 +1971,11 @@ a {
 
   .links-btn-hover-info.alignright {
     max-width: 100%;
+  }
+
+  .links-btn-hover-info.filming {
+    max-width: 100%;
+    margin-left: 0%;
   }
 }
 
