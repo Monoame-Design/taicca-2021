@@ -560,6 +560,7 @@ a {
 }
 
 .image-gray.cliped {
+  height: 101%;
   -webkit-filter: brightness(110%) contrast(110%) grayscale(100%);
   filter: brightness(110%) contrast(110%) grayscale(100%);
   -webkit-transition: opacity 400ms cubic-bezier(.39, .575, .565, 1), -webkit-filter 400ms cubic-bezier(.39, .575, .565, 1);
