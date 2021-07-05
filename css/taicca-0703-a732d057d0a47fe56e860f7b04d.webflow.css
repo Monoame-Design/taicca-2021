@@ -575,6 +575,13 @@ a {
   filter: brightness(100%) contrast(100%) grayscale(0%);
 }
 
+.image-gray.cliped.modify {
+  position: relative;
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
 .learn-more {
   position: absolute;
   left: auto;
@@ -1384,6 +1391,10 @@ a {
     display: none;
   }
 
+  .marginbottom-details.hide {
+    display: none;
+  }
+
   .click-to-learn-more {
     position: absolute;
     left: 0%;
@@ -1418,6 +1429,10 @@ a {
     bottom: 0%;
     display: none;
     height: 100%;
+  }
+
+  .link-block.more-taiwan-cinema{
+    display: block;
   }
 
   .lineup-nav {
@@ -1651,6 +1666,10 @@ a {
     background-attachment: scroll;
   }
 
+  .selections-info.samsra.hide {
+    display: none;
+  }
+
   .selections-info.moneyboys {
     height: 450px;
     background-image: url('../images/money_boys4.png');
@@ -1774,11 +1793,47 @@ a {
     right: auto;
   }
 
+  .selections-info-p.inline-block.mobile {
+    color: #262626;
+  }
+
+  .selections-info-p.higheropacity.mobile {
+    color: #262626;
+    text-shadow: none;
+  }
+
+  .selections-info-p.mobile {
+    color: #262626;
+  }
+
   .selections-info-details {
     width: 70%;
+    text-shadow: none;
   }
 
   .selections-info-details.hide {
+    display: none;
+  }
+
+  .selections-info-details.mobile-hide {
+    display: none;
+  }
+
+  .selections-info-details.mobile {
+    display: none;
+    color: #262626;
+  }
+
+  .click-to-learn-more.mobile {
+    color: #ea573e;
+  }
+
+  .click-to-learn-more.mobile {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+
+  .click-to-learn-more.hide {
     display: none;
   }
 
@@ -1942,9 +1997,18 @@ a {
   }
 
   .selections-info.samsra {
-    height: 60vh;
-    max-height: 300px;
+    height: 360px;
+    max-height: 360px;
     background-position: 50% 50%;
+  }
+
+  .selections-info.samsra.mobile {
+    margin-bottom: 0px;
+    box-shadow: none;
+  }
+
+  .selections-info.samsra.hide.mobile {
+    display: block;
   }
 
   .selections-info.moneyboys {
@@ -1955,15 +2019,44 @@ a {
     background-attachment: scroll;
   }
 
+  .selections-info.moneyboys.mobile {
+    height: 360px;
+    max-height: none;
+    margin-bottom: 60px;
+    background-image: none;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    box-shadow: none;
+  }
+
   .selections-info.tad {
-    height: 60vh;
-    max-height: 300px;
+    height: 360px;
+    max-height: 360px;
   }
 
   .selections-info.xixi {
     height: 60vh;
     max-height: 350px;
     background-position: 0% 50%;
+  }
+
+  .selections-info.xixi.mobile {
+    display: none;
+    background-image: none;
+    background-position: 0px 0px;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+  }
+
+  .selections-info.xixi.xixi-mobile {
+    background-image: none;
+    background-position: 0px 0px;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    box-shadow: none;
   }
 
   .links-btn-hover-info.alignleft {
@@ -2065,9 +2158,15 @@ a {
   }
 
   .selections-info-details {
+    position: relative;
     width: 100%;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(30%, rgba(38, 38, 38, 0.5)), color-stop(70%, rgba(38, 38, 38, 0.5)), to(#000));
-    background-image: linear-gradient(180deg, #000, rgba(38, 38, 38, 0.5) 30%, rgba(38, 38, 38, 0.5) 70%, #000);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-image: none;
+  }
+
+  .selections-info-details.mobile-hide {
+    display: none;
   }
 
   .selections-hover-image {
@@ -2096,6 +2195,23 @@ a {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+  .click-to-learn-more.mobile {
+    position: relative;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .click-to-learn-more.mobile {
+    padding-right: 1em;
+    padding-left: 1em;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 
   .link-block.large {
@@ -2285,13 +2401,18 @@ a {
 
   .selections-info.samsra {
     height: 100vh;
-    max-height: 200px;
+    max-height: 240px;
     margin-bottom: 60px;
     background-image: none;
     background-position: 0px 0px;
     background-size: auto;
     background-repeat: repeat;
     background-attachment: scroll;
+  }
+
+  .selections-info.samsra.hide.mobile {
+    height: auto;
+    max-height: none;
   }
 
   .selections-info.moneyboys {
@@ -2305,9 +2426,14 @@ a {
     background-attachment: scroll;
   }
 
+  .selections-info.moneyboys.mobile {
+    height: auto;
+    max-height: none;
+  }
+
   .selections-info.tad {
     height: 100vh;
-    max-height: 200px;
+    max-height: 240px;
     margin-bottom: 60px;
     background-image: none;
     background-position: 0px 0px;
@@ -2324,6 +2450,10 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
+  }
+
+  .selections-info.xixi.xixi-mobile {
+    margin-bottom: -120px;
   }
 
   .links-btn-hover-info {
@@ -2385,13 +2515,7 @@ a {
   grid-area: nav-3;
 }
 
-#w-node-_3615dce5-eab5-8ae5-e776-ae47eae0930f-e62b17db {
-  -ms-grid-row: 15;
-  -ms-grid-column: 1;
-  grid-area: Area-5;
-}
-
-#w-node-d547348c-da14-58cd-6aa1-65dcca03700f-e62b17db {
+#w-node-_780444c4-7ae2-97f7-1215-821fc4cbda2e-e62b17db {
   -ms-grid-row: 15;
   -ms-grid-column: 1;
   grid-area: Area-5;
@@ -2579,13 +2703,7 @@ a {
     grid-area: nav-3;
   }
 
-  #w-node-_3615dce5-eab5-8ae5-e776-ae47eae0930f-e62b17db {
-    -ms-grid-row: 15;
-    -ms-grid-column: 1;
-    grid-area: Area-5;
-  }
-
-  #w-node-d547348c-da14-58cd-6aa1-65dcca03700f-e62b17db {
+  #w-node-_780444c4-7ae2-97f7-1215-821fc4cbda2e-e62b17db {
     -ms-grid-row: 15;
     -ms-grid-column: 1;
     grid-area: Area-5;
@@ -2691,12 +2809,7 @@ a {
       -ms-grid-column: 1;
     }
 
-    #w-node-_3615dce5-eab5-8ae5-e776-ae47eae0930f-e62b17db {
-      -ms-grid-row: 15;
-      -ms-grid-column: 1;
-    }
-
-    #w-node-d547348c-da14-58cd-6aa1-65dcca03700f-e62b17db {
+    #w-node-_780444c4-7ae2-97f7-1215-821fc4cbda2e-e62b17db {
       -ms-grid-row: 15;
       -ms-grid-column: 1;
     }
@@ -2766,12 +2879,7 @@ a {
       -ms-grid-column: 1;
     }
 
-    #w-node-_3615dce5-eab5-8ae5-e776-ae47eae0930f-e62b17db {
-      -ms-grid-row: 15;
-      -ms-grid-column: 1;
-    }
-
-    #w-node-d547348c-da14-58cd-6aa1-65dcca03700f-e62b17db {
+    #w-node-_780444c4-7ae2-97f7-1215-821fc4cbda2e-e62b17db {
       -ms-grid-row: 15;
       -ms-grid-column: 1;
     }
