@@ -1469,7 +1469,7 @@ a {
 
   .lineup-item-info {
     width: 60%;
-    margin-right: auto;
+    margin-right: 30px;
     margin-left: auto;
   }
 
@@ -2254,7 +2254,9 @@ a {
   }
 
   .lineup-item-info {
-    width: 100%;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .exhibitors-list-group {
